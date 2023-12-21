@@ -13,6 +13,7 @@
 // or "j", otherwise, the program should say "Good Bye". So, the final output
 // on the console should look like this:
 /*
+var array = new Array();
 Hello Yaakov
 Good Bye John
 Good Bye Jen
@@ -36,6 +37,72 @@ WARNING!!! WARNING!!!
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
+
+var array = new Array();
+array[0] = "Yaakov";
+array [1] = 2;
+array [2] = function (name) {
+ console.log("Hello " + name);
+};
+array[3] = "John";
+array [3] = 4;
+array [4] = function (name) {
+ console.log("Good Bye "  + name);
+};
+array[5] = "Jen";
+array [5] = 4;
+
+array[6] = "Jason";
+array [6] = 4;
+
+array[7] = "Paul";
+array [7] = 2;
+array[8] = "Frank";
+array [8] = 2;
+array[9] = "Larry";
+array [9] = 2;
+array[10] = "Paula";
+array [10] = 2;
+array[11] = "Laura";
+array [11] = 2;
+array[12] = "Jason";
+array [12] = 4;
+
+
+
+
+console.log(array);
+array [2]("Yaakov");
+
+console.log(array);
+array[4]("John");
+
+console.log(array);
+array[4]("John");
+
+console.log(array);
+array[4]("Jen");
+
+console.log(array);
+array[4]("Jason");
+
+console.log(array);
+array [2]("Paul");
+
+console.log(array);
+array [2]("Frank");
+
+console.log(array);
+array [2]("Larry");
+
+console.log(array);
+array [2]("Paula");
+
+console.log(array);
+array [2]("Laura");
+
+console.log(array);
+array[4]("Jim");
 
 
     var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
