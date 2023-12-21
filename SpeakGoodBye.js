@@ -8,18 +8,33 @@
 // STEP 7: Create an object, called 'byeSpeaker' to which you will attach
 // the "speak" method and which you will expose to the global context
 // See Lecture 52, part 1
-// var byeSpeaker =
+
+(function (window) {
+var byeSpeaker = {};
+byeSpeaker.name = "speak";
+var speak = "speak"
+byeSpeaker.speak = function (){
+    console.log(speak + byeSpeaker.speak);
+}
+
+window.byeSpeaker = "speak";
+
+
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
+(function () {
 var speakWord = "Good Bye";
+
 
 // STEP 8: Rewrite the 'speak' function such that it is attached to the
 // byeSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
 function speak(name) {
-  console.log(speakWord + " " + name);
+  console.log(speakWord + "byeSpeaker " + name);
 }
+})();
 
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
-// xxxx.xxxx = byeSpeaker;
+window.byeSpeaker = byeSpeaker;
+})(window);
